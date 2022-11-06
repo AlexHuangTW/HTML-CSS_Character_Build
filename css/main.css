@@ -153,3 +153,48 @@ footer, nav, section {
     margin: 10px 0;
 }
 
+.lightbox {
+    
+    width: 100vw; /* vw=viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    background-position: 40px bottom;
+    display: none;
+   
+}
+
+
+.lightbox_close {
+    position: relative;
+    top: 10px;
+    left: 95%;
+
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+
+
+.lightbox_close:hover {
+    opacity: 0.5; color: rgb(255, 0, 0);
+}
+
+.lightbox article {
+    width: 90%;
+    margin: 0 auto;
+ 
+       
+}
+
+
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target {
+    display: block;
+
+}
